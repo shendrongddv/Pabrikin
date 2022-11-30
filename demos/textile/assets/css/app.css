@@ -1,23 +1,22 @@
 /* Font */
-@import url(../font/poppins/poppins.css);
+@import url(../font/nunito/nunito.css);
+@import url(../font/open-sans/open-sans.css);
 
 /* Variable */
 :root {
-  --ff-heading: "Poppins", sans-serif;
+  --ff-heading: "Nunito", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
   --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  --radius: 0.75rem;
+  --radius: 0.5rem;
   --transition: 0.4s all ease;
 }
 
 /* Reset */
 body {
-  color: white;
-  min-height: 100vh;
+  font-family: var(--ff-body);
+  font-weight: 400;
 
-  background: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 0%;
+  background-color: #f5f5f5;
 }
 
 h1,
@@ -43,73 +42,44 @@ h6 {
   gap: 0.25rem;
 }
 
-#hero {
-  background: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 0%;
+/* Navbar */
+.navbar-brand img {
+  height: 2.5rem;
+}
 
+.nav-link {
   color: white;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
-/* Hero */
-#hero h1 {
-  line-height: 1.4;
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.95)),
+    url(../img/hero-bg.jpg);
 }
 
-.siteLogo {
-  height: 2rem;
-}
-
-.demo__card {
+.hero__feature {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-.demo__media {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
+  padding: 2rem;
+  background-color: white;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition: var(--transition);
 }
 
-.demo__media img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: 10s all ease;
+.hero__feature i {
+  font-size: 3rem;
+  color: #dc3545;
 }
 
-.demo__media:hover img {
-  top: -100%;
-}
-
-.demo__card a {
+.hero__feature:hover {
+  background-color: #dc3545;
   color: white;
-  transition: var(--transition);
 }
 
-.demo__card a:hover {
-  text-decoration: underline;
-  transition: var(--transition);
-}
-
-@media (max-width: 767.98px) {
-  .demo__card .h5 {
-    font-size: 14px;
-  }
-}
-
-/* Footer */
-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.125);
+.hero__feature:hover i {
+  color: white;
 }
 
 /* Media Query */
