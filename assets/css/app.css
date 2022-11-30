@@ -101,7 +101,26 @@ h6 {
   transition: var(--transition);
 }
 
+@media (max-width: 767.98px) {
+  .demo__card .h5 {
+    font-size: 14px;
+  }
+}
+
 /* Footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Media Query */
+/* sm */
+@media (max-width: 575.98px) {
+}
+
+/* md, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* lg, less than 992px) */
+@media (max-width: 991.98px) {
 }
