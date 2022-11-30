@@ -40,6 +40,11 @@ h6 {
   gap: 0.25rem;
 }
 
+/* Capability */
+figure img {
+  height: 2rem;
+}
+
 /* Media Query */
 /* sm */
 @media (max-width: 575.98px) {
