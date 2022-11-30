@@ -1,0 +1,126 @@
+/* Font */
+@import url(../font/poppins/poppins.css);
+
+/* Variable */
+:root {
+  --ff-heading: "Poppins", sans-serif;
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --radius: 0.75rem;
+  --transition: 0.4s all ease;
+}
+
+/* Reset */
+body {
+  color: white;
+  min-height: 100vh;
+
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+}
+
+/* Utility */
+
+.sectionPadding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#hero {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+
+  color: white;
+}
+
+/* Hero */
+#hero h1 {
+  line-height: 1.4;
+}
+
+.siteLogo {
+  height: 2rem;
+}
+
+.demo__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.demo__media {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.demo__media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 10s all ease;
+}
+
+.demo__media:hover img {
+  top: -100%;
+}
+
+.demo__card a {
+  color: white;
+  transition: var(--transition);
+}
+
+.demo__card a:hover {
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+@media (max-width: 767.98px) {
+  .demo__card .h5 {
+    font-size: 14px;
+  }
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Media Query */
+/* sm */
+@media (max-width: 575.98px) {
+}
+
+/* md, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* lg, less than 992px) */
+@media (max-width: 991.98px) {
+}
