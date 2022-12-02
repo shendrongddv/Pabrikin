@@ -28,6 +28,7 @@ img,
 picture,
 svg {
   max-width: 100%;
+  display: block;
 }
 
 /* Utility */
@@ -130,6 +131,21 @@ svg {
 }
 
 /* Procedures */
+.procedure__card {
+  padding: 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.procedure__card:hover {
+  box-shadow: var(--shadow);
+}
+
+/* CTA */
+.imgSignature {
+  flex: none;
+  height: 4rem;
+}
 
 /* Media Query */
 /* sm */
