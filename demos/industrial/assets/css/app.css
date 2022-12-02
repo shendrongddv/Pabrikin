@@ -1,0 +1,145 @@
+/* Font */
+@import url(../font/poppins/poppins.css);
+
+/* Variable */
+:root {
+  --ff-heading: "Poppins", sans-serif;
+  /* --ff-body: "Open Sans", sans-serif; */
+  --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --radius: 0.5rem;
+  --transition: 0.4s all ease;
+}
+
+/* Reset */
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-heading);
+  line-height: 1;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+
+/* Utility */
+
+.sectionPadding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.imgSubtitle {
+  height: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  transition: var(--transition);
+}
+
+.navbarLogo {
+  height: 2.5rem;
+}
+
+#hero {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__feature {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+/* Industries */
+#industries {
+  padding-top: 5rem;
+}
+
+.industry__card {
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.industry__card.highlight,
+.industry__card:hover {
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+/* Products */
+#products {
+  padding-top: 5rem;
+}
+
+.product__card {
+  aspect-ratio: 4 / 3;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../img/product-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.product__card:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../img/product-1.jpg);
+  box-shadow: var(--shadow);
+}
+
+/* Procedures */
+
+/* Media Query */
+/* sm */
+@media (max-width: 575.98px) {
+}
+
+/* md, less than 768px) */
+@media (max-width: 767.98px) {
+}
+
+/* lg, less than 992px) */
+@media (max-width: 991.98px) {
+}
